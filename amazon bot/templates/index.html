@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Bot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my Chatbot!</h1>
+        <!-- Chat widget button -->
+        <button id="chat-widget-button" class="btn btn-primary rounded-circle position-fixed chat-sign-button" style="bottom: 20px; right: 20px;">Chat with me!</button>
+
+        <!-- Chatbox -->
+        <div id="chat-widget" class="card position-fixed shadow d-none" style="bottom: 100px; right: 20px; width: 300px;">
+            <div class="card-header bg-primary text-white">
+                Chatbot
+                <button id="chat-widget-close-button" type="button" class="btn-close float-end" aria-label="Close"></button>
+            </div>
+            <div class="card-body" id="chat-widget-messages">
+                <!-- Chat messages will be appended here -->
+            </div>
+            <div class="card-footer">
+                <input type="text" class="form-control" id="chat-widget-input" placeholder="Type your message...">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            // Chat widget button
+            $("#chat-widget-button").click(function(){
+                $("#chat-widget").toggleClass("d-none");
+            });
+
+            // Chat widget close button
+            $("#chat-widget-close-button").click(function(){
+                $("#chat-widget").addClass("d-none");
+            });
+
+            // Chat widget input
+            $("#chat-widget-input").keypress(function(e){
+                if(e.which == 13){
+                    var message = $(this).val();
+                    $(this).val("");
+                    $("#chat-widget-messages").append("<div><strong>You:</strong> "+message+"</div>");
+                    $.ajax({
+                        type: "POST",
+                        url: "/webhook",
+                        contentType: "application/json",
+                        data: JSON.stringify({"message": message}),
+                        success: function(response){
+                            var botResponse = data.response;
+                            $("#chat-widget-messages").append("<div><strong>Bot:</strong> "+botResponse+"</div>");
+                        }
+                    });
+                }
+            });
+        
+        })
+    </script>
+
+</body>
+</html>
