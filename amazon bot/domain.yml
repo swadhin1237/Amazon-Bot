@@ -1,0 +1,37 @@
+version: "3.1"
+# domain.yml
+intents:
+  - greet
+  - buy_product
+  - provide_categories
+  - provide_subcategories
+  - provide_product_details
+
+entities:
+  - categories
+  - Subcategories
+  - Brand
+  - Price
+
+responses:
+  utter_greet:
+  - text: "Hi! Welcome to Amazon. How can I help you today?"
+
+  utter_ask_categories:
+  - text: "Please mention the categories."
+
+  utter_ask_subcategories:
+  - text: "Also, provide the subcategories."
+
+  utter_ask_product_details:
+  - text: "Now mention the details like brand and price."
+
+actions:
+- action_ask_categories
+- action_ask_subcategories
+- action_ask_product_details
+- action_show_product
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

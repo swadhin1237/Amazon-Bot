@@ -1,0 +1,40 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+- intent: buy_product
+  examples: |
+    - I want to buy a product
+    - Help me purchase something
+    - I'd like to make a purchase
+    - How can I buy a product?
+    - Can you assist me in buying an item?
+    - I'm looking to make a purchase
+    - Please help me with a product purchase
+    - I want to place an order
+- intent: provide_categories
+  examples: |
+    - [Electronics](categories)
+    - [Clothing](categories)
+    - [Books](categories)
+- intent: provide_subcategories
+  examples: |
+    - [Mobile](Subcategories)
+    - [Laptop](Subcategories)
+    - [Men's Clothing](Subcategories)
+    - [Women's Clothing](Subcategories)
+    - [Fiction](Subcategories)
+    - [Non-Fiction](Subcategories)
+- intent: provide_product_details
+  examples: |
+    - I want [Apple](Brand) [1,00,000](Price)
+    - I'm interested in a [Samsung](Brand) phone under [500](Price)
+    - Find me a [Dell](Brand) laptop within [1,500](Price)
+    - Show me [Nike](Brand) shoes for [100](Price)
+    - I'm looking for [J.K. Rowling](Brand) books under [20](Price)
+    - I want [Sony](Brand) headphones for [50](Price)
+    - I'm searching for [Adidas](Brand) sportswear in [75](Price)

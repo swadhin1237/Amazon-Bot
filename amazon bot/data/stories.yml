@@ -1,0 +1,17 @@
+version: "3.1"
+
+stories:
+
+- story: greet and buy product
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: buy_product
+  - action: utter_ask_categories
+  - intent: provide_categories
+  - action: utter_ask_subcategories
+  - intent: provide_subcategories
+  - action: utter_ask_product_details
+  - intent: provide_product_details
+  - action: action_show_product
+
