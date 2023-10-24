@@ -44,7 +44,12 @@ rasa train
 
 ## Testing the Chatbot
 
-Check the description in running the chatbot for testing the chatbot
+Check the description in running the chatbot for testing the chatbot and open three separate terminal windows:
+   rasa run
+   rasa run actions
+   flask run
+
+
 
 
 ## Understanding the Code
@@ -80,3 +85,17 @@ Your chatbot project is fully customizable to cater to your specific requirement
 - **Custom Actions**: Extend the functionality of the chatbot by adding new custom actions to address unique use cases or functionalities specific to your e-commerce platform. Custom actions provide flexibility and adaptability.
 
 - **NLP Enhancements**: Enhance the chatbot's NLP capabilities by fine-tuning the language models, integrating additional language resources, or adjusting similarity thresholds. This enables the chatbot to better understand user queries and provide more precise responses.
+
+## Future Additions
+
+[Download User Guide (DOCX)](https://docs.google.com/document/d/1jwPwr4RaICmUSm4qnAsGU8ng5kesE7PksEyw6AxrJ9s/edit?usp=sharing)
+
+We have exciting plans to enhance this README and the Amazon Bot Chatbot project in the near future. Here are some of the upcoming additions:
+
+1. **User Guide**: We are working on a comprehensive user guide in DOCX format that will provide detailed instructions on setting up, customizing, and using the Amazon Bot Chatbot.
+
+2. **Additional Features**: We will be adding new features to the chatbot, such as improved product search capabilities, multilingual support, and user account management.
+
+3. **Performance Enhancements**: Our development team is continuously optimizing the chatbot's performance to make it faster and more responsive.
+
+Stay tuned for these exciting updates! We are committed to making the Amazon Bot Chatbot even more powerful and user-friendly in the coming months.
