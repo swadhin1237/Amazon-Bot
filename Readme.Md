@@ -1,6 +1,6 @@
 # Amazon Bot Chatbot
 
-![Amazon Bot](/Amazon-Bot/amazon%20bot/images/Screenshot%20from%202023-10-25%2002-45-25.png)
+![Amazon Bot](/amazon%20bot/images/Screenshot%20from%202023-10-25%2002-45-25.png)
 
 This is a chatbot project for a fictitious Amazon-like e-commerce platform created using Rasa. The chatbot allows users to interact with the e-commerce platform, search for products, and get product recommendations based on brand, subcategory, and price. The chatbot also allows users to add products to their cart and checkout. The chatbot is trained using Rasa's open source natural language understanding (NLU) and dialogue management tools.
 
