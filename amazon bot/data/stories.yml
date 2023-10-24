@@ -14,4 +14,3 @@ stories:
   - action: utter_ask_product_details
   - intent: provide_product_details
   - action: action_show_product
-

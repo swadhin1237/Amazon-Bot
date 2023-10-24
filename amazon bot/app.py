@@ -21,6 +21,8 @@ def webhook ():
     
     bot_response = rasa_response_json[0]['text'] if rasa_response_json else 'Sorry, I didn\'t understand that.'
     
+    print("Bot Response: ", bot_response)
+
     return jsonify({'response': bot_response })
 
 

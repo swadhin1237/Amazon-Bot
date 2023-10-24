@@ -42,17 +42,20 @@
             // Chat widget input
             $("#chat-widget-input").keypress(function(e){
                 if(e.which == 13){
-                    var message = $(this).val();
+                    let userMessage = $(this).val();
                     $(this).val("");
-                    $("#chat-widget-messages").append("<div><strong>You:</strong> "+message+"</div>");
+                    $("#chat-widget-messages").append("<div><strong>You:</strong> "+userMessage+"</div>");
                     $.ajax({
                         type: "POST",
                         url: "/webhook",
                         contentType: "application/json",
-                        data: JSON.stringify({"message": message}),
+                        data: JSON.stringify({message: userMessage}),
                         success: function(response){
-                            var botResponse = data.response;
+                            let botResponse = response["response"];
                             $("#chat-widget-messages").append("<div><strong>Bot:</strong> "+botResponse+"</div>");
+                        },
+                        error: function(error){
+                            console.log(error);
                         }
                     });
                 }
