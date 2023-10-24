@@ -1,0 +1,8 @@
+torch
+transformers
+spacy
+Flask
+typing
+rasa
+scikit-learn
+requests
