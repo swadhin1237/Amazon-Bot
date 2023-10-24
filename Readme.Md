@@ -4,7 +4,7 @@
 
 This is a chatbot project for a fictitious Amazon-like e-commerce platform created using Rasa. The chatbot allows users to interact with the e-commerce platform, search for products, and get product recommendations based on brand, subcategory, and price. The chatbot also allows users to add products to their cart and checkout. The chatbot is trained using Rasa's open source natural language understanding (NLU) and dialogue management tools.
 
-## Demo
+## Demo Video
 
 [![Alt text](/amazon%20bot/images/image.png)](https://www.youtube.com/watch?v=VIDEO_ID)
 
@@ -47,9 +47,11 @@ rasa train
 ## Testing the Chatbot
 
 Check the description in running the chatbot for testing the chatbot and open three separate terminal windows:
+```bash
    rasa run
    rasa run actions
    flask run
+```
 
 
 
