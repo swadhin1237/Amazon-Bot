@@ -19,7 +19,9 @@ Before running the chatbot, make sure you have the following installed:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/amazon_bot.git
+   git clone https://github.com/swadhin1237/Amazon-Bot.git
+   cd Amazon-Bot
+   pip install -r requirements.txt
    cd amazon_bot
    ```
 
