@@ -6,6 +6,12 @@ intents:
   - provide_categories
   - provide_subcategories
   - provide_product_details
+  - goodbye
+  - chitchat
+  - choice_goodFeedback
+  - choice_badFeedback
+  - choice_inform_about_eCommerce
+  - faq
 
 entities:
   - categories
@@ -17,20 +23,48 @@ responses:
   utter_greet:
   - text: "Hi! Welcome to Amazon. How can I help you today?"
 
-  utter_ask_categories:
-  - text: "Please mention the categories."
+  utter_welcome:
+  - text: Welcome to our website!
 
-  utter_ask_subcategories:
-  - text: "Also, provide the subcategories."
+  utter_goodbye:
+  - text: Good shopping on eCommerce, see you soon!
 
-  utter_ask_product_details:
-  - text: "Now mention the details like brand and price."
+  ask_name:
+  - text: What is your name?
+
+  ask_how_you_are:
+  - text: How are you?
+  utter_chitchat:
+  - text: I am fine thank you for asking!
+
+  utter_feedbackProvided:
+  - text: Thanks for the feedback!
+
+  utter_faq:
+  - text: eCommerce is a website template created by team Achievers for AMAZON HACK ON Hackhathon.
+
+  eCommerce_info:
+  - text: eCommerce is a website template created by team Achievers for AMAZON HACK ON Hackhathon.
+
+  utter_inform_about_eCommerce:
+  - text: The name of teh company is Amazon. You can read all about it on the internet.
+
+  utter_howCanIhelpYou:
+  - buttons:
+    - payload: /buy_product
+      title: Buy Product
+    - payload: /provide_categories
+      title: Get information about categories
+    - payload: /provide_product_details
+      title: Provide product details
+    text: 'Tell me which of these options would you like me to help you with:'
+
 
 actions:
-- action_ask_categories
-- action_ask_subcategories
-- action_ask_product_details
-- action_show_product
+  - action_ask_categories
+  - action_ask_subcategories
+  - action_ask_product_details
+  - action_show_product
 
 session_config:
   session_expiration_time: 60
