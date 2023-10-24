@@ -6,7 +6,7 @@ This is a chatbot project for a fictitious Amazon-like e-commerce platform creat
 
 ## Demo
 
-[![Alt text](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Alt text](/amazon%20bot/images/image.png)](https://www.youtube.com/watch?v=VIDEO_ID)
 
 ## Prerequisites
 
