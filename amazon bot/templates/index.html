@@ -129,7 +129,8 @@
                 Chatbot
                 <button id="chat-widget-close-button" type="button" class="btn-close float-end" aria-label="Close"></button>
             </div>
-            <div class="card-body" id="chat-widget-messages">
+            <div class="card-body" id="chat-widget-messages" style="max-height: 500px; overflow: auto;">
+                
                 <!-- Chat messages will be appended here -->
             </div>
             <div class="card-footer">
@@ -156,6 +157,7 @@
                     let userMessage = $(this).val();
                     $(this).val("");
                     $("#chat-widget-messages").append("<div><strong>You:</strong> "+userMessage+"</div>");
+                    $("#chat-widget-messages").stop().animate({ scrollTop: $("#chat-widget-messages")[0].scrollHeight}, 1000);
                     $.ajax({
                         type: "POST",
                         url: "/webhook",
@@ -164,6 +166,7 @@
                         success: function(response){
                             let botResponse = response["response"];
                             $("#chat-widget-messages").append("<div><strong>Bot:</strong> "+botResponse+"</div>");
+                            $("#chat-widget-messages").stop().animate({ scrollTop: $("#chat-widget-messages")[0].scrollHeight}, 1000);
                         },
                         error: function(error){
                             console.log(error);

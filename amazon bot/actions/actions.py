@@ -161,10 +161,6 @@ products=[
   {
     "description": "Samsung Galaxy Book Flex - A 2-in-1 laptop with a QLED display and impressive battery life.",
     "price": 1099.99
-  },
-  {
-    "description": "Samsung Galaxy Book Flex - A 2-in-1 laptop with a QLED display and impressive battery life.",
-    "price": 1099.99
   }
 ]
 
@@ -277,8 +273,8 @@ class ActionShowProduct(Action):
             response = ""
             i=1
             for product in relevant_products:
-                response += f"Product 1: \nBrand: {brand}, Price: {price}, Description: {product['description']}\n"
+                response += f"<br> Product {i}: <br> Brand: {brand}, <br> Price: {product['price']}, <br> Description: {product['description']} <br>"
                 i+=1
-        print(response)
+        # print(response)
         dispatcher.utter_message(response)
         return []
