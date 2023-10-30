@@ -116,15 +116,21 @@ products=[
   },
     {
     "description": "Apple iPhone 13 - A13 Bionic chip, Super Retina XDR display, 128GB storage.",
-    "price": 799.99
+    "price": 799.99,
+    "img":"https://m.media-amazon.com/images/I/71xb2xkN5qL._SL1500_.jpg",
+    "link": "https://www.amazon.in/Apple-iPhone-13-128GB-Blue/dp/B09G9BL5CP"
   },
   {
     "description": "Apple iPhone 13 Pro - ProMotion display, 256GB storage, powerful A15 chip.",
-    "price": 999.99
+    "price": 999.99,
+    "img":"",
+    "link": ""
   },
   {
     "description": "Apple iPhone 13 Mini - Compact design, A15 Bionic chip, 64GB storage.",
-    "price": 699.99
+    "price": 699.99,
+    "img":"",
+    "link": ""
   },
   {
     "description": "Apple MacBook Air - M2 chip, 13.3-inch Retina display, 256GB SSD.",
@@ -273,7 +279,7 @@ class ActionShowProduct(Action):
             response = ""
             i=1
             for product in relevant_products:
-                response += f"<br> Product {i}: <br> Brand: {brand}, <br> Price: {product['price']}, <br> Description: {product['description']} <br>"
+                response += f"<br> Product {i}: <br> Brand: {brand}, <br> Price: {product['price']}, <br> Description: {product['description']} <br> <a href='{product['link']}'> <img style='padding:5px;border:thin solid black;width:100px;height:100px' src={product['img']}> </a> <br>"
                 i+=1
         # print(response)
         dispatcher.utter_message(response)
