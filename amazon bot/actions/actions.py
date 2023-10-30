@@ -278,3 +278,12 @@ class ActionShowProduct(Action):
         # print(response)
         dispatcher.utter_message(response)
         return []
+    
+
+class ActionFeedbackProvided(Action):
+    def name(self) -> Text:
+        return "action_feedbackProvided"
+    
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("Thank you for your feedback. Bye Bye!")
+        return []

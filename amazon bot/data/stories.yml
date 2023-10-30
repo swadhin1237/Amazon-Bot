@@ -15,12 +15,13 @@ stories:
   - intent: provide_product_details
   - action: action_show_product
 
-# - story: Happy path - Provide feedback
-#   steps:
-#   - or:
-#     - intent: choice_goodFeedback
-#     - intent: choice_badFeedback
-#   - action: utter_goodbye
+- story: Happy path - Provide feedback
+  steps:
+  - or:
+    - intent: choice_goodFeedback
+    - intent: choice_badFeedback
+  - action: action_feedbackProvided
+  # - action: utter_goodbye
 
 # - story: Happy path 2 - Inform about a particular product
 #   steps:
