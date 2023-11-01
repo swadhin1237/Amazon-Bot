@@ -1,0 +1,119 @@
+version: "3.1"
+nlu:
+- intent: chitchat/ask_name
+  examples: |
+    - you have a name?
+    - name?
+    - what can i call you?
+- intent: faq/eCommerce_info
+  examples: |
+    - about the boutique in general
+    - general information about the e-commerce website
+    - general information about the store
+    - about the shop in general
+    - about the commerce in general
+- intent: chitchat/ask_how_you_are
+  examples: |
+    - are you fine?
+    - hi how u doing
+    - how ?
+    - are you ok
+    - how are you doing?
+    - What's new?
+    - how you doing
+    - whatchcha doing
+    - Ahoy matey how are you?
+    - are you ok?
+    - how are you?
+    - how are xou
+    - how are u
+    - you ok?
+    - How was your day?
+    - hey how are you?
+    - is everything all right
+    - are you alright
+    - how's your day going
+    - good and y?
+    - what's up
+    - you good?
+    - how have you been
+    - whats new
+    - hi sara, how are you?
+- intent: provide_subcategories
+  examples: |
+    - [Women's Clothing](Subcategories)
+- intent: greet
+  examples: |
+    - Hey
+    - Good Morning
+- intent: buy_product
+  examples: |
+    - What's the process for making a purchase?
+    - Please help me with a product purchase
+- intent: provide_categories
+  examples: |
+    - [Jewelry](categories)
+    - [Sunglasses](categories)
+    - [Guitar](categories)
+    - [Clothing](categories)
+- intent: provide_product_details
+  examples: |
+    - Find me a [Dell](Brand) laptop within [1,500](Price)
+    - Find me a [Mercedes-Benz] (Brand) car for [50,000](Price).
+    - I'm looking for [J.K. Rowling](Brand) books under [20](Price)
+    - I'm in the market for a [HP] (Brand) printer priced at [200](Price).
+    - Find me a [Calvin Klein](Brand) dress under [2500](Price).
+- intent: choice_inform_about_eCommerce
+  examples: |
+    - info about the shop
+    - info about the commerce
+    - info about the company
+    - inform me about the application
+    - about the firm
+    - what is eCommerce?
+    - more info
+    - info about the convenience store
+- intent: goodbye
+  examples: |
+    - cu
+    - have a nice day
+    - good bye rasa bot!
+    - bye bye bot
+    - see you
+    - ok.bye
+    - cee you later
+    - gotta go
+    - goodbye.
+    - bye was nice talking to you
+- intent: choice_badFeedback
+  examples: |
+    - you are bad
+    - it's awful
+    - bad
+    - you're second-rate
+    - inadequate
+    - it's not good
+    - you are unacceptable
+    - you are poor
+    - unacceptable
+    - deficient
+- intent: choice_goodFeedback
+  examples: |
+    - it's awesome
+    - you're of high quality
+    - you're upstanding
+    - you are in order
+    - you're fine
+    - fine
+    - up to standard
+    - you are outstanding
+    - it's of high standard
+    - you're superior
+    - you are good
+    - ethical
+    - it's satisfactory
+    - right-minded
+    - you are ethical
+    - you're ethical
+    - you're examplary
+    - you're good

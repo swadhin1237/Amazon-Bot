@@ -2,62 +2,37 @@ version: "3.1"
 # domain.yml
 intents:
   - greet
-  - buy_product
-  - provide_categories
-  - provide_subcategories
-  - provide_product_details
-  - goodbye
-  - chitchat
+  # - buy_product
+  # - provide_categories
+  # - provide_product_details
   - choice_goodFeedback
   - choice_badFeedback
-  - choice_inform_about_eCommerce
-  - faq
+  - inform_phone_query
+  - inform_laptop_query
+
 
 entities:
   - categories
   - Subcategories
   - Brand
   - Price
+  - storage
+  - price
+  - brand  
 
 responses:
   utter_greet:
   - text: "Hi! Welcome to Amazon. How can I help you today?"
 
-  utter_welcome:
-  - text: Welcome to our website!
-
-  utter_goodbye:
-  - text: Good shopping on eCommerce, see you soon!
-
-  ask_name:
-  - text: What is your name?
-
-  ask_how_you_are:
-  - text: How are you?
-  utter_chitchat:
-  - text: I am fine thank you for asking!
-
   utter_feedbackProvided:
   - text: Thanks for the feedback!
 
-  utter_faq:
-  - text: eCommerce is a website template created by team Achievers for AMAZON HACK ON Hackhathon.
+  # eCommerce_info:
+  # - text: eCommerce is a website template created by team Achievers for AMAZON HACK ON Hackhathon.
 
-  eCommerce_info:
-  - text: eCommerce is a website template created by team Achievers for AMAZON HACK ON Hackhathon.
+  # utter_inform_about_eCommerce:
+  # - text: The name of teh company is Amazon. You can read all about it on the internet.
 
-  utter_inform_about_eCommerce:
-  - text: The name of teh company is Amazon. You can read all about it on the internet.
-
-  utter_howCanIhelpYou:
-  - buttons:
-    - payload: /buy_product
-      title: Buy Product
-    - payload: /provide_categories
-      title: Get information about categories
-    - payload: /provide_product_details
-      title: Provide product details
-    text: 'Tell me which of these options would you like me to help you with:'
 
 
 actions:
@@ -66,6 +41,8 @@ actions:
   - action_ask_product_details
   - action_show_product
   - action_feedbackProvided
+  - action_phone
+  - action_laptop
 
 session_config:
   session_expiration_time: 60

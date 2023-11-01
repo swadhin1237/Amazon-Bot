@@ -1,0 +1,14 @@
+version: "3.1"
+stories:
+- story: greet and buy product (./tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: buy_product
+  - action: action_ask_categories
+  - intent: provide_categories  # predicted: provide_categories: [Electronics](categories)
+  - action: action_ask_subcategories
+  - intent: provide_subcategories  # predicted: provide_subcategories: [Mobile](Subcategories)
+  - action: action_ask_product_details
+  - intent: provide_product_details  # predicted: provide_product_details: I want a [Samsung](Brand) phone under [10000](Price)
+  - action: action_show_product

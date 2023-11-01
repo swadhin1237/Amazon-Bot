@@ -2,25 +2,62 @@ version: "3.1"
 
 stories:
 
-- story: greet and buy product
+# - story: greet and buy product
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: buy_product
+#   - action: action_ask_categories
+#   - intent: provide_categories
+#   - action: action_ask_subcategories
+#   - intent: provide_subcategories
+#   - action: action_ask_product_details
+#   - intent: provide_product_details
+#   - action: action_show_product
+
+# - story: Happy path - Provide feedback
+#   steps:
+#   - or:
+#     - intent: choice_goodFeedback
+#     - intent: choice_badFeedback
+#   - action: action_feedbackProvided
+
+
+- story: greet and phone recommend
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: buy_product
-  - action: action_ask_categories
-  - intent: provide_categories
-  - action: action_ask_subcategories
-  - intent: provide_subcategories
-  - action: action_ask_product_details
-  - intent: provide_product_details
-  - action: action_show_product
-
-- story: Happy path - Provide feedback
+  - intent: inform_phone_query
+  - action: action_phone
+  # - intent: inform_phone_query_follow
+  
+- story: greet and laptop recommend
   steps:
-  - or:
-    - intent: choice_goodFeedback
-    - intent: choice_badFeedback
-  - action: action_feedbackProvided
+  - intent: greet
+  - action: utter_greet
+  - intent: inform_laptop_query
+  - action: action_laptop
+
+
+- story: direct laptop recommend
+  steps:
+  - intent: inform_phone_query
+  - action: action_phone
+
+- story: direct laptop recommend
+  steps:
+  - intent: inform_laptop_query
+  - action: action_laptop
+
+
+
+
+
+
+
+
+
+
   # - action: utter_goodbye
 
 # - story: Happy path 2 - Inform about a particular product
@@ -30,4 +67,4 @@ stories:
 #   - or:
 #     - intent: choice_goodFeedback
 #     - intent: choice_badFeedback
-#   - action: utter_goodbye
+#   - action: utter_goodbyes

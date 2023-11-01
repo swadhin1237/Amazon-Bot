@@ -1,0 +1,98 @@
+{
+  "provide_subcategories": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "choice_goodFeedback": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 92,
+    "confused_with": {}
+  },
+  "provide_categories": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 18,
+    "confused_with": {}
+  },
+  "provide_product_details": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 27,
+    "confused_with": {}
+  },
+  "choice_badFeedback": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 52,
+    "confused_with": {}
+  },
+  "faq": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 28,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "buy_product": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 13,
+    "confused_with": {}
+  },
+  "chitchat": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 136,
+    "confused_with": {}
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 48,
+    "confused_with": {}
+  },
+  "choice_inform_about_eCommerce": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 38,
+    "confused_with": {}
+  },
+  "accuracy": 1.0,
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 465
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 465
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 465
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "faq/eCommerce_info": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 28,
+    "confused_with": {}
+  },
+  "chitchat/ask_name": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "chitchat/ask_how_you_are": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 124,
+    "confused_with": {}
+  },
+  "accuracy": 1.0,
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 164
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 164
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 164
+  }
+}

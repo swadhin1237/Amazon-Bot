@@ -1,0 +1,398 @@
+version: "3.1"
+nlu:
+- intent: chitchat/ask_name
+  examples: |
+    - you are called?
+    - do you have a name for yourself?
+    - how can i call you?
+    - you called?
+    - what's your name?
+    - what is your name?
+    - may I know your name?
+    - what do people call you?
+    - you're called?
+- intent: faq/eCommerce_info
+  examples: |
+    - about eCommerce in general
+    - general information
+    - general information about the shop
+    - about the website in general
+    - general information about the website
+    - about the store in general
+    - general information about eCommerce
+    - about the company in general
+    - in general
+    - general information about the firm
+    - about the e-commerce website in general
+    - general information about the local store
+    - about the local storen in general
+    - general information about the app
+    - general information about the company
+    - general information about the boutique
+    - about the convenience store in general
+    - general information about the application
+    - about the application in general
+    - about the firm in general
+    - general information about the convenience store
+    - about the app in general
+    - general information about the commerce
+- intent: chitchat/ask_how_you_are
+  examples: |
+    - what's up boy?
+    - okay hi how are you?
+    - you okay?
+    - Is everything ok?
+    - how are you'
+    - and you?
+    - how are you today
+    - y?
+    - fine you?
+    - are you okay
+    - nah, I'm good - how are you doing?
+    - and you
+    - what's up sara
+    - y okay?
+    - not good you?
+    - Hows it going
+    - How are you today?
+    - how is your evening
+    - I'm fine and you
+    - h r u ?
+    - you?
+    - how are you
+    - y ok?
+    - hi how are you?
+    - are you k?
+    - what's up?
+    - are you okay?
+    - howareyou
+    - How are you
+    - are you happy
+    - how are you doing this morning
+    - yk?
+    - how is your day
+    - How are you men?
+    - not good and you?
+    - you k?
+    - Do you have a great day?
+    - how's life been treating you?
+    - what's up girl?
+    - yow are you
+    - how is it going
+    - you fine?
+    - fine and you?
+    - how are things going
+    - how do you do?
+    - hello, how are you?
+    - not good and y?
+    - how are you doing today?
+    - Are you ok?
+    - How you doing?
+    - How's it hanging?
+    - whats goin on
+    - How's it going
+    - What's up
+    - how are you Rasa
+    - how is your day going
+    - is everything okay
+    - how you doing?
+    - how are u?
+    - Hi Sara! How are you?
+    - How've you been?
+    - What's going on?
+    - are you cool
+    - how's life
+    - how are yuo
+    - how are you ?
+    - good y?
+    - whatchya upto ?
+    - fine y?
+    - how are you doing today my sweet friend
+    - How's life treating you friend?
+    - what are you up to?
+    - wassup>
+    - what about your day
+    - Hey Sara, how's it going
+    - how are you feeling
+    - how are things with you?
+    - how are you????
+    - How are you?
+    - how are you doing
+    - whatsapp
+    - What's up man
+    - HI Sara, what are you up to?
+    - hw r u?
+    - y k?
+    - how r u>
+    - good you?
+    - not good y?
+    - how r u
+    - what's good
+    - How are things?
+    - Do you feel good?
+    - are you having a good day
+    - good and you?
+    - fine and y?
+    - and y?
+    - how r u ?
+    - How are You?
+    - how's it going?
+- intent: provide_subcategories
+  examples: |
+    - [Non-Fiction](Subcategories)
+    - [Men's Clothing](Subcategories)
+    - [Fiction](Subcategories)
+    - [Laptop](Subcategories)
+    - [Mobile](Subcategories)
+- intent: greet
+  examples: |
+    - Help me
+    - Hola
+    - Hi
+    - Hello
+    - Namaste
+- intent: buy_product
+  examples: |
+    - I'm looking to make a purchase
+    - Could you guide me through the steps to buy an item?
+    - I want to place an order
+    - I want to buy a product
+    - I'd like to make a purchase
+    - I'm interested in acquiring a product.
+    - Help me purchase something
+    - I'm in the market for buying something.
+    - How do I go about ordering a product?
+    - How can I buy a product?
+    - Can you assist me in buying an item?
+- intent: provide_categories
+  examples: |
+    - [Electronics](categories)
+    - [Gaming Console](categories)
+    - [Hiking Boot](categories)
+    - [Cookware Set](categories)
+    - [Toys](categories)
+    - [Watch](categories)
+    - [Furniture]
+    - [Shirt](categories)
+    - [Jeans](categories)
+    - [Backpack](categories)
+    - [Headphones](categories)
+    - [Shoes](categories)
+    - [Dress](categories)
+    - [Books](categories)
+- intent: provide_product_details
+  examples: |
+    - I want [Sony](Brand) headphones for [50](Price)
+    - Show me [ASUS] (Brand) gaming laptop for around [1,200](Price).
+    - I want [Microsoft Office](Brand) software.
+    - Show me [Nike](Brand) shoes for [100](Price)
+    - I want [Rolex] (Brand) watch for [10,000](Price).
+    - I'm looking for a [MacBook Pro] (Brand) laptop within [2,000](Price).
+    - I'm searching for [Louis Vuitton] (Brand) handbag within [2,000](Price).
+    - Find me [Gucci] (Brand) sunglasses for [500](Price).
+    - I want [Sony] (Brand) 4K TV for [1,500](Price).
+    - Show me [Panasonic](Brand) kitchen appliances under [20,000](Price).
+    - I want [Apple](Brand) [1,00,000](Price)
+    - I'm searching for [Puma](Brand) sneakers priced at [60k](Price).
+    - I'm in the market for an [LG](Brand) TV priced around [15000](Price).
+    - I want a [Toyota](Brand) car under [3,00,000](Price).
+    - Show me [Samsung] (Brand) refrigerator under [1,500](Price).
+    - I'm searching for [Adidas](Brand) sportswear in [75](Price)
+    - Show me [Apple](Brand) AirPods for [20000](Price).
+    - I'm interested in a [Bose](Brand) soundbar for around [3000](Price).
+    - Find me a [Canon](Brand) camera.
+    - I'm looking for a [Lenovo](Brand) laptop.
+    - I'm interested in [Nike] (Brand) running shoes under [100](Price).
+    - I'm interested in a [Samsung](Brand) phone under [500](Price)
+- intent: choice_inform_about_eCommerce
+  examples: |
+    - what's eCommerce?
+    - inform me about the store
+    - inform me about the shop
+    - inform me about the website
+    - info about the store
+    - more info company
+    - info about the e-commerce website
+    - inform me about the app
+    - inform me about the convenience store
+    - inform me about the company
+    - inform me about the local store
+    - inform company
+    - info about the local store
+    - inform me about the e-commerce website
+    - inform me about the commerce
+    - info about the app
+    - what is this firm about?
+    - what eCommerce?
+    - eCommerce?
+    - info about the application
+    - info about the firm
+    - info about the boutique
+    - inform me about eCommerce's website
+    - inform me about the boutique
+    - inform me about the firm
+    - more info about eCommerce
+    - about eCommerce
+    - what's this firm about?
+    - info about the website
+    - more information
+- intent: goodbye
+  examples: |
+    - byee
+    - catch you later
+    - adios?
+    - bye .
+    - cya
+    - adios
+    - Close this talk
+    - ok, bye
+    - ciao
+    - bye :P
+    - Bye
+    - Bye bye
+    - ok Bye
+    - byr
+    - tlak to you later
+    - goodbye
+    - k byyye #slay
+    - ok bye
+    - goodnight
+    - bye for now
+    - good by
+    - Exit
+    - then bye
+    - see you . bye
+    - good bye
+    - see you around
+    - good night
+    - take care
+    - bye!
+    - bye
+    - good afternoon
+    - bye bot
+    - farewell
+    - see ya
+    - see you later
+    - bye bye
+    - see u later
+    - bye udo
+- intent: choice_badFeedback
+  examples: |
+    - you are inferior
+    - inferior
+    - poor
+    - you are deficient
+    - it's second-rate
+    - you're inadequate
+    - terrible
+    - you're unacceptable
+    - it's unpleasant
+    - it's inferior
+    - it's bad
+    - you're not ethical
+    - you're bad
+    - you're awful
+    - you're inferior
+    - you are terrible
+    - you're second-class
+    - it's deficient
+    - it's inadequate
+    - it's terrible
+    - it's poor
+    - second-class
+    - it's unacceptable
+    - you're poor
+    - you are unpleasant
+    - it's not ethical
+    - second-rate
+    - unpleasant
+    - you are second-class
+    - not good
+    - you are second-rate
+    - you're unpleasant
+    - you are not ethical
+    - you're not good
+    - you are not good
+    - it's second-class
+    - you are inadequate
+    - you're terrible
+    - awful
+    - you're deficient
+    - you are awful
+    - not ethical
+- intent: choice_goodFeedback
+  examples: |
+    - you are up to the mark
+    - in order
+    - you're right-minded
+    - it's really good
+    - you are of high standard
+    - you are acceptable
+    - you are up to standard
+    - you're high standard
+    - you are clean
+    - it's fine
+    - you're acceptable
+    - you are satisfactory
+    - quality
+    - it's up to standard
+    - you are awesome
+    - up to the mark
+    - upstanding
+    - it's examplary
+    - you're of high standard
+    - it's acceptable
+    - you're in order
+    - you are of high quality
+    - you are right-minded
+    - it's great
+    - you are adequate
+    - you're up to standard
+    - you're quality
+    - it's good
+    - clean
+    - you're really good
+    - you're up to the mark
+    - you are high standard
+    - really good
+    - it's in order
+    - it's up to the mark
+    - outstanding
+    - it's ethical
+    - great
+    - you are really good
+    - superior
+    - of high standard
+    - it's of high quality
+    - good
+    - of high quality
+    - it's upstanding
+    - high standard
+    - acceptable
+    - it's right-minded
+    - it's adequate
+    - you're outstanding
+    - you are quality
+    - awesome
+    - it's clean
+    - high quality
+    - you're high quality
+    - you're satisfactory
+    - you are great
+    - examplary
+    - it's quality
+    - you are upstanding
+    - it's high standard
+    - it's superior
+    - you're adequate
+    - it's high quality
+    - you are high quality
+    - you are examplary
+    - it's outstanding
+    - satisfactory
+    - you are superior
+    - you are fine
+    - you're great
+    - you're clean
+    - adequate
+    - you're awesome
