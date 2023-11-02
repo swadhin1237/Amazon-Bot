@@ -10,323 +10,154 @@ nlu:
       - Hola
       - Help me
       - Good Morning
-  # - intent: buy_product
-  #   examples: |
-  #     - I want to buy a product
-  #     - Help me purchase something
-  #     - I'd like to make a purchase
-  #     - How can I buy a product?
-  #     - Can you assist me in buying an item?
-  #     - I'm looking to make a purchase
-  #     - Please help me with a product purchase
-  #     - I want to place an order
-  #     - I'm interested in acquiring a product.
-  #     - I'm in the market for buying something.
-  #     - How do I go about ordering a product?
-  #     - What's the process for making a purchase?
-  #     - Could you guide me through the steps to buy an item?
-  # - intent: provide_categories
-  #   examples: |
-  #     - [Electronics](categories)
-  #     - [Clothing](categories)
-  #     - [Books](categories)
-  #     - [Furniture]
-  #     - [Shirt](categories)
-  #     - [Shoes](categories)
-  #     - [Headphones](categories)
-  #     - [Jeans](categories)
-  #     - [Watch](categories)
-  #     - [Books](categories)
-  #     - [Backpack](categories)
-  #     - [Gaming Console](categories)
-  #     - [Sunglasses](categories)
-  #     - [Cookware Set](categories)
-  #     - [Jewelry](categories)
-  #     - [Toys](categories)
-  #     - [Guitar](categories)
-  #     - [Dress](categories)
-  #     - [Hiking Boot](categories)
-  # - intent: provide_subcategories
-  #   examples: |
-  #     - [Mobile](Subcategories)
-  #     - [Laptop](Subcategories)
-  #     - [Men's Clothing](Subcategories)
-  #     - [Women's Clothing](Subcategories)
-  #     - [Fiction](Subcategories)
-  #     - [Non-Fiction](Subcategories)
-  # - intent: provide_product_details
-  #   examples: |
-  #     - I want [Apple](Brand) [1,00,000](Price)
-  #     - I'm interested in a [Samsung](Brand) phone under [500](Price)
-  #     - Find me a [Dell](Brand) laptop within [1,500](Price)
-  #     - Show me [Nike](Brand) shoes for [100](Price)
-  #     - I'm looking for [J.K. Rowling](Brand) books under [20](Price)
-  #     - I want [Sony](Brand) headphones for [50](Price)
-  #     - I'm searching for [Adidas](Brand) sportswear in [75](Price)
-  #     - I'm in the market for an [LG](Brand) TV priced around [15000](Price).
-  #     - Find me a [Canon](Brand) camera.
-  #     - Show me [Apple](Brand) AirPods for [20000](Price).
-  #     - I want a [Toyota](Brand) car under [3,00,000](Price).
-  #     - I'm interested in a [Bose](Brand) soundbar for around [3000](Price).
-  #     - I'm looking for a [Lenovo](Brand) laptop.
-  #     - Find me a [Calvin Klein](Brand) dress under [2500](Price).
-  #     - I want [Microsoft Office](Brand) software.
-  #     - I'm searching for [Puma](Brand) sneakers priced at [60k](Price).
-  #     - Show me [Panasonic](Brand) kitchen appliances under [20,000](Price).
-  #     - I want [Rolex] (Brand) watch for [10,000](Price).
-  #     - Show me [Samsung] (Brand) refrigerator under [1,500](Price).
-  #     - I'm in the market for a [HP] (Brand) printer priced at [200](Price).
-  #     - Find me [Gucci] (Brand) sunglasses for [500](Price).
-  #     - I'm looking for a [MacBook Pro] (Brand) laptop within [2,000](Price).
-  #     - I want [Sony] (Brand) 4K TV for [1,500](Price).
-  #     - Show me [ASUS] (Brand) gaming laptop for around [1,200](Price).
-  #     - I'm interested in [Nike] (Brand) running shoes under [100](Price).
-  #     - Find me a [Mercedes-Benz] (Brand) car for [50,000](Price).
-  #     - I'm searching for [Louis Vuitton] (Brand) handbag within [2,000](Price).
 
-  # - intent: goodbye
-  #   examples: |
-  #     - good afternoon
-  #     - cu
-  #     - good by
-  #     - cee you later
-  #     - good night
-  #     - bye
-  #     - goodbye
-  #     - have a nice day
-  #     - see you around
-  #     - bye bye
-  #     - see you later
-  #     - Bye
-  #     - Bye bye
-  #     - adios
-  #     - adios?
-  #     - bye .
-  #     - bye :P
-  #     - bye bot
-  #     - bye bye
-  #     - bye bye bot
-  #     - bye for now
-  #     - bye udo
-  #     - bye was nice talking to you
-  #     - bye!
-  #     - byee
-  #     - catch you later
-  #     - ciao
-  #     - cya
-  #     - farewell
-  #     - good bye
-  #     - good bye rasa bot!
-  #     - good night
-  #     - goodbye
-  #     - goodbye.
-  #     - goodnight
-  #     - gotta go
-  #     - k byyye #slay
-  #     - ok Bye
-  #     - ok bye
-  #     - ok, bye
-  #     - ok.bye
-  #     - see u later
-  #     - see ya
-  #     - see you
-  #     - see you . bye
-  #     - take care
-  #     - then bye
-  #     - tlak to you later
-  #     - Exit
-  #     - Close this talk
-  #     - byr
-
-  # - intent: choice_badFeedback
-  #   examples: |
-  #     - bad
-  #     - not good
-  #     - awful
-  #     - terrible
-  #     - unpleasant
-  #     - poor
-  #     - inferior
-  #     - second-rate
-  #     - second-class
-  #     - inadequate
-  #     - unacceptable
-  #     - deficient
-  #     - not ethical
-  #     - it's bad
-  #     - it's not good
-  #     - it's awful
-  #     - it's terrible
-  #     - it's unpleasant
-  #     - it's poor
-  #     - it's inferior
-  #     - it's second-rate
-  #     - it's second-class
-  #     - it's inadequate
-  #     - it's unacceptable
-  #     - it's deficient
-  #     - it's not ethical
-  #     - you are bad
-  #     - you are not good
-  #     - you are awful
-  #     - you are terrible
-  #     - you are unpleasant
-  #     - you are poor
-  #     - you are inferior
-  #     - you are second-rate
-  #     - you are second-class
-  #     - you are inadequate
-  #     - you are unacceptable
-  #     - you are deficient
-  #     - you are not ethical
-  #     - you're bad
-  #     - you're not good
-  #     - you're awful
-  #     - you're terrible
-  #     - you're unpleasant
-  #     - you're poor
-  #     - you're inferior
-  #     - you're second-rate
-  #     - you're second-class
-  #     - you're inadequate
-  #     - you're unacceptable
-  #     - you're deficient
-  #     - you're not ethical
-  # - intent: choice_goodFeedback
-  #   examples: |
-  #     - good
-  #     - really good
-  #     - fine
-  #     - of high quality
-  #     - high quality
-  #     - of high standard
-  #     - high standard
-  #     - quality
-  #     - superior
-  #     - satisfactory
-  #     - acceptable
-  #     - adequate
-  #     - right-minded
-  #     - examplary
-  #     - clean
-  #     - ethical
-  #     - upstanding
-  #     - outstanding
-  #     - awesome
-  #     - great
-  #     - up to standard
-  #     - in order
-  #     - up to the mark
-  #     - it's good
-  #     - it's really good
-  #     - it's fine
-  #     - it's of high quality
-  #     - it's high quality
-  #     - it's of high standard
-  #     - it's high standard
-  #     - it's quality
-  #     - it's superior
-  #     - it's satisfactory
-  #     - it's acceptable
-  #     - it's adequate
-  #     - it's right-minded
-  #     - it's examplary
-  #     - it's clean
-  #     - it's ethical
-  #     - it's upstanding
-  #     - it's outstanding
-  #     - it's awesome
-  #     - it's great
-  #     - it's up to standard
-  #     - it's in order
-  #     - it's up to the mark
-  #     - you are good
-  #     - you are really good
-  #     - you are fine
-  #     - you are of high quality
-  #     - you are high quality
-  #     - you are of high standard
-  #     - you are high standard
-  #     - you are quality
-  #     - you are superior
-  #     - you are satisfactory
-  #     - you are acceptable
-  #     - you are adequate
-  #     - you are right-minded
-  #     - you are examplary
-  #     - you are clean
-  #     - you are ethical
-  #     - you are upstanding
-  #     - you are outstanding
-  #     - you are awesome
-  #     - you are great
-  #     - you are up to standard
-  #     - you are in order
-  #     - you are up to the mark
-  #     - you're good
-  #     - you're really good
-  #     - you're fine
-  #     - you're of high quality
-  #     - you're high quality
-  #     - you're of high standard
-  #     - you're high standard
-  #     - you're quality
-  #     - you're superior
-  #     - you're satisfactory
-  #     - you're acceptable
-  #     - you're adequate
-  #     - you're right-minded
-  #     - you're examplary
-  #     - you're clean
-  #     - you're ethical
-  #     - you're upstanding
-  #     - you're outstanding
-  #     - you're awesome
-  #     - you're great
-  #     - you're up to standard
-  #     - you're in order
-  #     - you're up to the mark
-  # - intent: choice_inform_about_eCommerce
-  #   examples: |
-  #     - inform me about the firm
-  #     - inform me about the company
-  #     - inform me about the shop
-  #     - inform me about the store
-  #     - inform me about the local store
-  #     - inform me about the convenience store
-  #     - inform me about the boutique
-  #     - inform me about the website
-  #     - inform me about the e-commerce website
-  #     - inform me about eCommerce's website
-  #     - inform me about the application
-  #     - inform me about the app
-  #     - inform me about the commerce
-  #     - info about the firm
-  #     - info about the company
-  #     - info about the shop
-  #     - info about the store
-  #     - info about the local store
-  #     - info about the convenience store
-  #     - info about the boutique
-  #     - info about the website
-  #     - info about the e-commerce website
-  #     - info about the application
-  #     - info about the app
-  #     - info about the commerce
-  #     - more info
-  #     - more info about eCommerce
-  #     - inform company
-  #     - more information
-  #     - more info company
-  #     - about eCommerce
-  #     - about the firm
-  #     - what is eCommerce?
-  #     - what's eCommerce?
-  #     - what eCommerce?
-  #     - eCommerce?
-  #     - what's this firm about?
-  #     - what is this firm about?
-
+  - intent: choice_feedback
+    examples: |
+      - bad
+      - not good
+      - awful
+      - terrible
+      - unpleasant
+      - poor
+      - inferior
+      - second-rate
+      - second-class
+      - inadequate
+      - unacceptable
+      - deficient
+      - not ethical
+      - it's bad
+      - it's not good
+      - it's awful
+      - it's terrible
+      - it's unpleasant
+      - it's poor
+      - it's inferior
+      - it's second-rate
+      - it's second-class
+      - it's inadequate
+      - it's unacceptable
+      - it's deficient
+      - it's not ethical
+      - you are bad
+      - you are not good
+      - you are awful
+      - you are terrible
+      - you are unpleasant
+      - you are poor
+      - you are inferior
+      - you are second-rate
+      - you are second-class
+      - you are inadequate
+      - you are unacceptable
+      - you are deficient
+      - you are not ethical
+      - you're bad
+      - you're not good
+      - you're awful
+      - you're terrible
+      - you're unpleasant
+      - you're poor
+      - you're inferior
+      - you're second-rate
+      - you're second-class
+      - you're inadequate
+      - you're unacceptable
+      - you're deficient
+      - you're not ethical
+      - good
+      - really good
+      - fine
+      - of high quality
+      - high quality
+      - of high standard
+      - high standard
+      - quality
+      - superior
+      - satisfactory
+      - acceptable
+      - adequate
+      - right-minded
+      - examplary
+      - clean
+      - ethical
+      - upstanding
+      - outstanding
+      - awesome
+      - great
+      - up to standard
+      - in order
+      - up to the mark
+      - it's good
+      - it's really good
+      - it's fine
+      - it's of high quality
+      - it's high quality
+      - it's of high standard
+      - it's high standard
+      - it's quality
+      - it's superior
+      - it's satisfactory
+      - it's acceptable
+      - it's adequate
+      - it's right-minded
+      - it's examplary
+      - it's clean
+      - it's ethical
+      - it's upstanding
+      - it's outstanding
+      - it's awesome
+      - it's great
+      - it's up to standard
+      - it's in order
+      - it's up to the mark
+      - you are good
+      - you are really good
+      - you are fine
+      - you are of high quality
+      - you are high quality
+      - you are of high standard
+      - you are high standard
+      - you are quality
+      - you are superior
+      - you are satisfactory
+      - you are acceptable
+      - you are adequate
+      - you are right-minded
+      - you are examplary
+      - you are clean
+      - you are ethical
+      - you are upstanding
+      - you are outstanding
+      - you are awesome
+      - you are great
+      - you are up to standard
+      - you are in order
+      - you are up to the mark
+      - you're good
+      - you're really good
+      - you're fine
+      - you're of high quality
+      - you're high quality
+      - you're of high standard
+      - you're high standard
+      - you're quality
+      - you're superior
+      - you're satisfactory
+      - you're acceptable
+      - you're adequate
+      - you're right-minded
+      - you're examplary
+      - you're clean
+      - you're ethical
+      - you're upstanding
+      - you're outstanding
+      - you're awesome
+      - you're great
+      - you're up to standard
+      - you're in order
+      - you're up to the mark
+      
   - intent: inform_phone_query
     examples: |
       - I want to buy an [Apple](brand) phone with [128GB storage](storage) under [100000](Price)

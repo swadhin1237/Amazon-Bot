@@ -2,11 +2,7 @@ version: "3.1"
 # domain.yml
 intents:
   - greet
-  # - buy_product
-  # - provide_categories
-  # - provide_product_details
-  - choice_goodFeedback
-  - choice_badFeedback
+  - choice_feedback
   - inform_phone_query
   - inform_laptop_query
 
@@ -18,7 +14,8 @@ entities:
   - Price
   - storage
   - price
-  - brand  
+  - brand
+  - GPU
 
 responses:
   utter_greet:

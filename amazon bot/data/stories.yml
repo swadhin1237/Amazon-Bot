@@ -17,10 +17,9 @@ stories:
 
 # - story: Happy path - Provide feedback
 #   steps:
-#   - or:
-#     - intent: choice_goodFeedback
-#     - intent: choice_badFeedback
+#   - intent: choice_goodFeedback
 #   - action: action_feedbackProvided
+
 
 
 - story: greet and phone recommend
@@ -29,6 +28,8 @@ stories:
   - action: utter_greet
   - intent: inform_phone_query
   - action: action_phone
+  - intent: choice_feedback
+  - action: utter_feedbackProvided
   # - intent: inform_phone_query_follow
   
 - story: greet and laptop recommend
@@ -37,17 +38,22 @@ stories:
   - action: utter_greet
   - intent: inform_laptop_query
   - action: action_laptop
-
+  - intent: choice_feedback
+  - action: utter_feedbackProvided
 
 - story: direct laptop recommend
   steps:
   - intent: inform_phone_query
   - action: action_phone
+  - intent: choice_feedback
+  - action: utter_feedbackProvided
 
 - story: direct laptop recommend
   steps:
   - intent: inform_laptop_query
   - action: action_laptop
+  - intent: choice_feedback
+  - action: utter_feedbackProvided
 
 
 

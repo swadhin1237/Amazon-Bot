@@ -47,7 +47,7 @@ def lemma(sentence):
 def word_or_synonyms_in_text1(word, text):
     word = word
     for token in nlp(text):
-        if(similarity(word,token.text)>=0.95):
+        if(similarity(word,token.text)>=0.9):
             return True
     return False
 
@@ -75,22 +75,34 @@ class ActionLaptop(Action):
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         brand=next(tracker.get_latest_entity_values("brand"),None)
         storage=next(tracker.get_latest_entity_values("storage"),None)
-        price=next(tracker.get_latest_entity_values("price"),None)
+        price=next(tracker.get_latest_entity_values("price"),"10000000")
         RAM=next(tracker.get_latest_entity_values("RAM"),None)
         GPU=next(tracker.get_latest_entity_values("GPU"),None)
         processor=next(tracker.get_latest_entity_values("processor"),None)
+        Price=(float)(price.replace(',',''))
         products=laptop_products
         if(brand==None):
             relevant_products=products
         else:
             relevant_products = find_relevant_products(brand, products)
-        response = "No relevant product found"
+        response = ""
+        relevant_products=sorted(relevant_products,key=lambda x:(-(float)(x['rating']),(float)(x['price'][1:].replace(',',''))))
         if(relevant_products):
             response = ""
             i=1
             for product in relevant_products:
-                response += f"<br> Product {i}: <br> Brand: {brand}, <br> Price: {product['price']}, <br> Description: {product['description']} <br> "
+                prod_price=(float)(product['price'][1:].replace(',',''))
+                # print(prod_price)
+                if(prod_price>Price):
+                    continue
+                if(GPU and not ("GPU" in product['product_name'])):
+                    continue
+                response += f"<br> {product['product_name']} <br> Price: {product['price']} <br> Rating: {product['rating']} <br> <a href={product['link']}> <img src='{product['image']}'></a> <br>"
                 i+=1
+                if(i==5):
+                    break
+        if(response==""):
+            response="No relevant product found"
         dispatcher.utter_message(response)
         return []
 
@@ -101,19 +113,30 @@ class ActionPhone(Action):
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         brand=next(tracker.get_latest_entity_values("brand"),None)
         storage=next(tracker.get_latest_entity_values("storage"),None)
-        Price=next(tracker.get_latest_entity_values("Price"),None)
+        Price=next(tracker.get_latest_entity_values("Price"),"1000000")
+        Price=(float)(Price.replace(',',''))
         products=phone_products
         if(brand==None):
             relevant_products=products
         else:
             relevant_products = find_relevant_products(brand, products)
-        response = "No relevant product found"
+        response = ""
+        relevant_products=sorted(relevant_products,key=lambda x:(-(float)(x['rating']),(float)(x['price'][1:].replace(',',''))))
         if(relevant_products):
             response = ""
             i=1
             for product in relevant_products:
-                response += f"<br> Product {i}: <br> Brand: {brand}, <br> Price: {product['price']}, <br> Description: {product['description']} <br> "
+                prod_price=(float)(product['price'][1:].replace(',',''))
+                # print(prod_price)
+                if(prod_price>Price):
+                    continue
+                response += f"<br> {product['product_name']} <br> Price: {product['price']} <br> Rating: {product['rating']} <br> <a href={product['link']}> <img src='{product['image']}'></a> <br>"
                 i+=1
-        # str1=f'Brand:{brand},Storage:{storage},Price:{Price}'
+                if(i==5):
+                    break
+        
+        if(response==""):
+            response="No relevant product found"
+
         dispatcher.utter_message(response)
         return []
