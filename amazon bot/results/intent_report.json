@@ -1,0 +1,102 @@
+{
+  "provide_subcategories": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 6,
+    "confused_with": {
+      "provide_categories": 1
+    }
+  },
+  "chitchat": {
+    "precision": 1.0,
+    "recall": 0.9926470588235294,
+    "f1-score": 0.996309963099631,
+    "support": 136,
+    "confused_with": {
+      "choice_goodFeedback": 1
+    }
+  },
+  "choice_goodFeedback": {
+    "precision": 0.989247311827957,
+    "recall": 1.0,
+    "f1-score": 0.9945945945945946,
+    "support": 92,
+    "confused_with": {}
+  },
+  "choice_inform_about_eCommerce": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 38,
+    "confused_with": {}
+  },
+  "buy_product": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 13,
+    "confused_with": {}
+  },
+  "provide_product_details": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 27,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "choice_badFeedback": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 52,
+    "confused_with": {}
+  },
+  "provide_categories": {
+    "precision": 0.95,
+    "recall": 1.0,
+    "f1-score": 0.9743589743589743,
+    "support": 19,
+    "confused_with": {}
+  },
+  "faq": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 28,
+    "confused_with": {}
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 48,
+    "confused_with": {}
+  },
+  "accuracy": 0.9957081545064378,
+  "macro avg": {
+    "precision": 0.9944770283479961,
+    "recall": 0.984180035650624,
+    "f1-score": 0.9885776764676462,
+    "support": 466
+  },
+  "weighted avg": {
+    "precision": 0.9958385250819143,
+    "recall": 0.9957081545064378,
+    "f1-score": 0.9956399649176363,
+    "support": 466
+  },
+  "micro avg": {
+    "precision": 0.9957081545064378,
+    "recall": 0.9957081545064378,
+    "f1-score": 0.9957081545064378,
+    "support": 466
+  }
+}

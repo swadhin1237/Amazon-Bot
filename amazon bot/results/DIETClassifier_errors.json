@@ -1,0 +1,26 @@
+[
+  {
+    "text": "Laptop",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Laptop",
+        "entity": "categories"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "Subcategories",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.6461547017097473,
+        "value": "Laptop",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Laptop",
+    "intent": "provide_subcategories",
+    "intent_prediction": {
+      "name": "provide_categories",
+      "confidence": 0.5184541344642639
+    }
+  },
+  {
+    "text": "are you fine?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "choice_goodFeedback",
+      "confidence": 0.4788287878036499
+    }
+  }
+]

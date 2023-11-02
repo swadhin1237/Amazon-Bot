@@ -470,7 +470,7 @@ nlu:
       - eCommerce?
       - what's this firm about?
       - what is this firm about?
-  - intent: faq/eCommerce_info
+  - intent: faq
     examples: |
       - general information about eCommerce
       - general information about the firm

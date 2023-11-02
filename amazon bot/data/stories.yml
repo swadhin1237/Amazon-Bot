@@ -31,3 +31,13 @@ stories:
 #     - intent: choice_goodFeedback
 #     - intent: choice_badFeedback
 #   - action: utter_goodbye
+
+- story: Happy path 1 - Inform me about eCommerce
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_howCanIhelpYou
+  - intent: choice_inform_about_eCommerce
+  - action: utter_inform_about_eCommerce
+  - intent: faq
+  - action: utter_faq
